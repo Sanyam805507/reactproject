@@ -6,6 +6,7 @@ import Support from './Screen/Support';
 import About from './Screen/About';
 import Employee from './Screen/Employee';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import Headers from './Screen/Headers';
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <h2>Welcome SA</h2>
       <BrowserRouter>
+      <Headers/>
       <Routes>
         <Route path ="home" element={<Home/>}/>
         <Route path ="about" element={<About/>}/>
